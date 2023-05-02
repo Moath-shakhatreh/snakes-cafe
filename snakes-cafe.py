@@ -1,8 +1,7 @@
-# refactore it & keep it DRY
-Appetizers = ["wings",'cookies'," spring rolls"]
-Entrees = ['salmon','steak','meat tornado','a literal garden']
-Desserts = ['ice cream','cake','pie']
-Drinks = ['coffee','tea','unicorn tears']
+
+
+cafeList = ["wings",'cookies'," spring rolls",'salmon','steak','meat tornado','a literal garden','ice cream','cake','pie','coffee','tea','unicorn tears']
+
 def intro():
     print('''
 **************************************
@@ -60,7 +59,7 @@ def main():
     while(user_input.lower() != "quit"):
         
         
-        if user_input.lower() in Appetizers or user_input.lower() in Entrees or user_input.lower() in Desserts or user_input.lower() in Drinks:
+        if user_input.lower() in cafeList :
                 l.append(user_input.lower())
                 for x in l :
                  if user_input.lower() == x :
@@ -80,3 +79,12 @@ def main():
 
 
 main()
+
+
+
+
+# Appetizers = ["wings",'cookies'," spring rolls"]
+# Entrees = ['salmon','steak','meat tornado','a literal garden']
+# Desserts = ['ice cream','cake','pie']
+# Drinks = ['coffee','tea','unicorn tears']
+# or user_input.lower() in Entrees or user_input.lower() in Desserts or user_input.lower() in Drinks
