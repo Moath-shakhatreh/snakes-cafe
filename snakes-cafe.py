@@ -58,12 +58,13 @@ def main():
     intro()
     user_input = user_insertion()
     while(user_input.lower() != "quit"):
-        l.append(user_input.lower())
-        for x in l :
-             if user_input.lower() == x :
-              i +=1
+        
         
         if user_input.lower() in Appetizers or user_input.lower() in Entrees or user_input.lower() in Desserts or user_input.lower() in Drinks:
+                l.append(user_input.lower())
+                for x in l :
+                 if user_input.lower() == x :
+                  i +=1
                 print('**',i,'order of',user_input,'has been added to your meal **')
                 #TODO: handle the order numbers
                 i=0
